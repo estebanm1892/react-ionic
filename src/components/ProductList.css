@@ -1,0 +1,34 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.product-card {
+    flex: 1 1 calc(25% - 32px);
+    /* Toma 25% del espacio menos márgenes */
+    max-width: 300px;
+    box-sizing: border-box;
+}
+@media (max-width: 1200px) {
+    .product-card {
+        flex: 1 1 calc(33.33% - 32px);
+        /* 3 cards por fila */
+    }
+}
+
+@media (max-width: 900px) {
+    .product-card {
+        flex: 1 1 calc(50% - 32px);
+        /* 2 cards por fila */
+    }
+}
+
+@media (max-width: 600px) {
+    .product-card {
+        flex: 1 1 100%;
+        /* 1 card por fila */
+    }
+}
