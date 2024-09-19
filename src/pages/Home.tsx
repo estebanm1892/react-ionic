@@ -55,6 +55,7 @@ const Home: React.FC = () => {
         </IonToolbar>
         <IonToolbar>
           <IonSearchbar
+          className="custom-searchbar"
             value={searchTerm}
             onIonInput={(e) => setSearchTerm(e.detail.value!)}
             placeholder="Search by product name"
